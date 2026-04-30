@@ -22,5 +22,5 @@ dependencyResolutionManagement {
     }
 }
 
-rootProject.name = "A206700_Wang_Yanze_Izwan_Lab02"
+rootProject.name = "A206700_Wang_Yanze_Izwan_Lab4"
 include(":app")
