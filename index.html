@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wang Yanze - Mobile Programming E-Portfolio</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        body {
+            line-height: 1.6;
+            color: #333;
+            background-color: #f8f9fa;
+        }
+        header {
+            background-color: #2c3e50;
+            color: white;
+            padding: 2rem;
+            text-align: center;
+        }
+        nav {
+            background-color: #34495e;
+            padding: 1rem;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+        nav ul {
+            list-style: none;
+            display: flex;
+            justify-content: center;
+            gap: 2rem;
+            flex-wrap: wrap;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            font-weight: 500;
+            transition: color 0.3s;
+        }
+        nav a:hover {
+            color: #3498db;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 2rem;
+        }
+        section {
+            margin-bottom: 3rem;
+            background: white;
+            padding: 2rem;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        h2 {
+            color: #2c3e50;
+            margin-bottom: 1.5rem;
+            border-bottom: 2px solid #3498db;
+            padding-bottom: 0.5rem;
+        }
+        .card-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 1.5rem;
+        }
+        .card {
+            border: 1px solid #e0e0e0;
+            border-radius: 8px;
+            padding: 1.5rem;
+            transition: transform 0.3s;
+        }
+        .card:hover {
+            transform: translateY(-5px);
+        }
+        .card h3 {
+            color: #2980b9;
+            margin-bottom: 1rem;
+        }
+        .video-container {
+            position: relative;
+            padding-bottom: 56.25%;
+            height: 0;
+            overflow: hidden;
+            margin: 1rem 0;
+        }
+        .video-container iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            border: none;
+            border-radius: 4px;
+        }
+        .btn {
+            display: inline-block;
+            background-color: #3498db;
+            color: white;
+            padding: 0.5rem 1rem;
+            border-radius: 4px;
+            text-decoration: none;
+            margin-top: 1rem;
+            transition: background-color 0.3s;
+        }
+        .btn:hover {
+            background-color: #2980b9;
+        }
+        footer {
+            background-color: #2c3e50;
+            color: white;
+            text-align: center;
+            padding: 2rem;
+            margin-top: 3rem;
+        }
+        .skills-list {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.5rem;
+            margin-top: 1rem;
+        }
+        .skill-tag {
+            background-color: #e3f2fd;
+            color: #1976d2;
+            padding: 0.3rem 0.8rem;
+            border-radius: 20px;
+            font-size: 0.9rem;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Wang Yanze - A206700</h1>
+        <p>Mobile Programming (TK2323/TM2213) E-Portfolio</p>
+        <p>SDG Goal 4: Quality Education</p>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#labs">Labs</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#reflection">Reflection</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#resources">Resources</a></li>
+        </ul>
+    </nav>
+
+    <div class="container">
+        <section id="home">
+            <h2>About Me</h2>
+            <p><strong>Name:</strong> Wang Yanze</p>
+            <p><strong>Matric No:</strong> A206700</p>
+            <p><strong>Programme:</strong> Bachelor of Computer Science (Mobile Computing)</p>
+            <p><strong>Instructor:</strong> Cikgu Izwan</p>
+            <p><strong>Introduction:</strong> I am a student at Universiti Kebangsaan Malaysia, passionate about mobile app development. Through this course, I aim to build practical, user-friendly applications that support learning and productivity.</p>
+            <p><strong>SDG Goal:</strong> I chose SDG 4 (Quality Education) because my app "My Notes" helps students organize their study materials and improve learning efficiency, aligning with the goal of inclusive and equitable quality education.</p>
+        </section>
+
+        <section id="labs">
+            <h2>Labs</h2>
+            <div class="card-grid">
+                <!-- Lab 1 -->
+                <div class="card">
+                    <h3>Lab 1 - UI Design</h3>
+                    <div class="video-container">
+                        <iframe src="https://www.youtube.com/embed/cgZIH4lSkDQ" title="Lab 1 Video"></iframe>
+                    </div>
+                    <p><strong>Reflection:</strong> In Lab 1, I learned how to design a clean and intuitive user interface using Jetpack Compose. I focused on making the notes app easy to navigate for students, aligning with SDG 4 by reducing friction in study organization.</p>
+                </div>
+
+                <!-- Lab 2 -->
+                <div class="card">
+                    <h3>Lab 2 - Interaction</h3>
+                    <div class="video-container">
+                        <iframe src="https://www.youtube.com/embed/6J48FWgfItk" title="Lab 2 Video"></iframe>
+                    </div>
+                    <p><strong>Reflection:</strong> Lab 2 taught me how to add interactive features like click listeners and text input validation. These features make My Notes more responsive and user-friendly, helping students quickly add and edit their study notes.</p>
+                </div>
+
+                <!-- Lab 3 -->
+                <div class="card">
+                    <h3>Lab 3 - Material Design</h3>
+                    <div class="video-container">
+                        <iframe src="https://www.youtube.com/embed/EhE9fBUKHiw" title="Lab 3 Video"></iframe>
+                    </div>
+                    <p><strong>Reflection:</strong> In Lab 3, I applied Material Design principles to My Notes, improving the visual hierarchy and accessibility. This made the app easier to use for all students, supporting inclusive learning as outlined in SDG 4.</p>
+                </div>
+
+                <!-- Lab 4 -->
+                <div class="card">
+                    <h3>Lab 4 - Navigation</h3>
+                    <div class="video-container">
+                        <iframe src="https://www.youtube.com/embed/XTRs1RhU51c" title="Lab 4 Video"></iframe>
+                    </div>
+                    <p><strong>Reflection:</strong> Lab 4 focused on implementing navigation between screens in My Notes. I learned how to use Jetpack Navigation to create a seamless flow between the home screen, note list, and note editor, making study organization more efficient.</p>
+                </div>
+
+                <!-- Lab 5 -->
+                <div class="card">
+                    <h3>Lab 5 - Room Database</h3>
+                    <div class="video-container">
+                        <iframe src="https://www.youtube.com/embed/oRqXJH4eps" title="Lab 5 Video"></iframe>
+                    </div>
+                    <p><strong>Reflection:</strong> In Lab 5, I integrated Room Database into My Notes to store notes locally. This ensures students' study materials are always accessible, even without internet, supporting continuous learning aligned with SDG 4.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="projects">
+            <h2>Projects</h2>
+            <div class="card-grid">
+                <!-- Project 1 -->
+                <div class="card">
+                    <h3>Project 1 - My Notes</h3>
+                    <p><strong>Problem Statement:</strong> Students often struggle to organize study materials across multiple platforms. My Notes provides a simple, offline-first solution to store and manage all notes in one place.</p>
+                    <div class="video-container">
+                        <iframe src="https://www.youtube.com/embed/U81JCrPUTek" title="Project 1 Video"></iframe>
+                    </div>
+                    <p><strong>Lessons Learned:</strong> I learned how to combine UI design, interaction, and navigation into a complete app. I also improved my debugging skills and learned to prioritize features that directly benefit students.</p>
+                    <a href="https://github.com/wangyanzeA206700/A206700_Wang_Yanze" target="_blank" class="btn">View on GitHub</a>
+                </div>
+
+                <!-- Project 2 -->
+                <div class="card">
+                    <h3>Project 2 - My Notes Enhanced</h3>
+                    <p><strong>Problem Statement:</strong> Building on Project 1, I added cloud sync, API integration, and sensor support to make My Notes more versatile for students, including features like photo notes and location tagging.</p>
+                    <div class="video-container">
+                        <iframe src="https://www.youtube.com/embed/A8MHjC1b8cg" title="Project 2 Video"></iframe>
+                    </div>
+                    <p><strong>Lessons Learned:</strong> I learned how to integrate Room with cloud services and use device sensors. I also improved my project planning and documentation skills, which will help me in future development work.</p>
+                    <a href="https://github.com/wangyanzeA206700/A206700_Wang_Yanze" target="_blank" class="btn">View on GitHub</a>
+                </div>
+            </div>
+        </section>
+
+        <section id="reflection">
+            <h2>Overall Reflection</h2>
+            <p>From Lab 1 to Project 2, I have grown significantly as a mobile developer. I started with basic UI design and gradually built up to a full-featured notes app with local storage, navigation, and cloud integration. The biggest challenge was implementing Room Database and ensuring data persistence, but through trial and error, I learned to debug and optimize database operations. Throughout the course, I kept SDG 4 in mind, designing My Notes to be simple, accessible, and useful for students. This project has shown me how technology can support quality education by making study organization easier for everyone.</p>
+        </section>
+
+        <section id="skills">
+            <h2>Skills & Tech Stack</h2>
+            <div class="skills-list">
+                <span class="skill-tag">Kotlin</span>
+                <span class="skill-tag">Jetpack Compose</span>
+                <span class="skill-tag">Room Database</span>
+                <span class="skill-tag">Firebase</span>
+                <span class="skill-tag">Navigation Component</span>
+                <span class="skill-tag">Material Design</span>
+                <span class="skill-tag">Git/GitHub</span>
+            </div>
+        </section>
+
+        <section id="resources">
+            <h2>Resources & References</h2>
+            <ul>
+                <li>Android Developers Documentation (Jetpack Compose, Room, Navigation)</li>
+                <li>YouTube tutorials on Kotlin and Android development</li>
+                <li>Stack Overflow for debugging database and UI issues</li>
+                <li>GitHub for version control and project management</li>
+            </ul>
+        </section>
+    </div>
+
+    <footer>
+        <p>&copy; 2026 Wang Yanze (A206700) | Mobile Programming E-Portfolio</p>
+    </footer>
+</body>
+</html>
